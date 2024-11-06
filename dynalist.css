@@ -1,275 +1,178 @@
-/* ==== font ==== */
-/* 1. import */
-/*   1.1. Azeret Mono */
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
-/* ** font-family: "Azeret Mono"; */
 
-/*   1.2. Nanum Gothic Coding */
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
-/* ** font-family: "Nanum Gothic Coding"; */
+  /* ********************************************
+  * IMPORT FONT
+  ******************************************** */
 
-/*   1.3. IBM Plex Sans KR */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
-/* ** font-family: "IBM Plex Sans KR", sans-serif; */
+  /* Azeret Mono */
+  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* 2. font-face */
-/*   2.1. nanume square neo */
-@font-face {
-  font-family: 'NanumSquareNeoLight';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
-}
+  /* Nanum Gothic Coding */
+  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 
-@font-face {
-  font-family: 'NanumSquareNeo';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-bRg.ttf) format("truetype");
-}
+  /* IBM Plex Sans KR */
+  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 
-@font-face {
-  font-family: 'NanumSquareNeoBold';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-cBd.ttf) format("truetype");
-}
+  /* Nanum Square Neo (100, 300, 500, 700, 800)*/
+  @import url(https://cdn.jsdelivr.net/gh/eunchurn/NanumSquareNeo@0.0.6/nanumsquareneo.css);
 
-@font-face {
-  font-family: 'NanumSquareNeoExtraBold';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-dEb.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquareNeoHeavy';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-eHv.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: 'NanumSquareNeoVariable';
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot);
-  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeo-Variable.ttf) format("truetype");
-}
-
-/* 2. set font */
-/*   2.1. at node */
-.Node{
-font-family: 'NanumSquareNeo';
-}
-/*   2.2. at code */
-/*     2.2.1. inline */
-.node-inline-code {
-font-family: "Azeret Mono", "IBM Plex Sans KR";
-}
-/*     2.2.2. multi-line */
-.hljs{
-font-family: "Azeret Mono", "IBM Plex Sans KR";
-}
+  /* Fira Code (300 ~ 700)*/
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
 
-/* ==== theme ==== */
-/* 1. themes */
-/* 1.1. eva (vsc) */
-:root {
---text: #535353;
---text2: #ababab;
---background: #f8f8f8;
---background2: #f3f3f3;
---background3: #ececec;
---background4: #cacaca;
---blue: #316bcd;
---blue2: #7A9FDF;
---blue3: #BACDEE;
---orange: #e88501;
---orange2: #cd9731;
---red: #cd3131;
---puple: #800080;
+  /* ********************************************
+  * THEME
+  ******************************************** */
 
-}
+  :root {
+    --text: #535353;
+    --text2: #ababab;
+    --background: #f8f8f8;
+    --background2: #f3f3f3;
+    --background3: #ececec;
+    --background4: #cacaca;
+    --blue: #316bcd;
+    --blue2: #7A9FDF;
+    --blue3: #BACDEE;
+    --orange: #e88501;
+    --orange2: #cd9731;
+    --red: #cd3131;
+    --purple: #800080;
+  }
 
-:root {
-/* A. tags */
-/*   A.1. color */
---tag-background: rgba(172, 30, 43, 0.6);
---tag-background-hover: rgba(172, 30, 43, 0.6);
-/*   A.2. size */
---tag-text-size: 0.8em;
---tag-text-weight: bold;
---tag-text-decoration: none;
---tag-color: white;
+  /* ********************************************
+  * ITEM
+  ******************************************** */
 
-/* B. Node */
-/*   B.1. text */
---node-text-color: var(--text);
---node-text-size: 0.9em; /* when font is medium */
---node-text-weight: 600;
---node-text-decoration: none;
-/*   B.2. children line */
---node-children-line: var(--text2) ;
-/*   B.3. inline code */
---inlineCode-color:var(--red);
---inlineCode-background:var(--background3);
-/*   B.4. multi line code */
---multilineCode-color:var(--text);
---multilineCode-background:var(--background3);
-/*   B.5. render note */
---renderNote-color:var(--blue2);
---renderNote-background:var(--background2);
+  /* Tags */ 
+  .node-tag {
+    background: rgba(172, 30, 43, 0.6);
+    color: white;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 0.3em;
+    padding: 2px 5px;
+  }
+  .node-tag:hover {
+    background: rgba(172, 30, 43, 0.6);
+  }
 
-/* C. Container */
---main-container: var(--background); 
---document-container: var(--background);
-/*   C.1. Tools */
---document-tools-color: var(--background);
---document-tools-boxshadow: none;
-/*   C.2. AppHeader */
---appHeader-text: var(--text2);
---appHeader-color: var(--background) ;
---appHeader-icon: var(--text2);
-/*   C.3. LeftPane */
-/*     C.3.1. Header */
-/*     C.3.2. Nav */
---leftpane-nav-color:var(--background);
---leftpane-nav-item-color:var(--background);
+  /* Node */
+  .Node {
+    color: var(--text);
+    font-family: 'NanumSquareNeo';
+    font-weight: 500;
+  }
+  .Node-children{
+    border-color: var(--text2);
+  }
+  .node-inline-item {
+    margin-top: 0px;
+  }
+  .node-bold {
+    font-weight: 700;
+  }
 
-}
-
-/* 2. Adjust */
-/* 2.1. tags */ 
-.node-tag {
-background: var(--tag-background);
-color: var(--tag-color);
-/* --- */
-font-size: var(--tag-text-size);
-font-weight: var(--tag-text-weight);
-text-decoration: var(--tag-text-decoration);
-/* --- */
-border-radius: 0.3em;
-padding: 2px 5px;
-}
-
-/*** hover */
-.node-tag:hover {
-background: var(--tag-background-hover);
-}
-
-/* 2.2. Node */
-.Node {
-color: var(--node-text-color);
-font-size: var(--node-text-size);
-font-weight: var(--node-text-weight);
-text-decoration: var(--node-text-decoration);
-}
-.node-inline-code {
-color: var(--inlineCode-color);
-background-color: var(--inlineCode-background);
-}
-/* multi line code */
-.hljs {
-color: var(--multilineCode-color);
-background: var(--multilineCode-background);
-}
-.Node-renderedNote {
-color: var(--renderNote-color);
-background: var(--renderNote-background);
-} 
-/* 3. Document */
-.main-container {
-background: var(--main-container);
-}
-.AppHeader {
-color: var(--appHeader-text);
-background-color: var(--appHeader-color);
-}
-.AppHeader-icon {
-color: var(--appHeader-icon);
-}
-.DocumentTools-overlay {
-background: var(--document-tools-color)!important;
-box-shadow: var(--document-tools-boxshadow);
-}
-.DocumentContainer{
-background: var(--document-container);
-}
-.LeftPaneContainer {
-background-color: ;
-0}
-.LeftPaneContainer-nav {
-background: var(--leftpane-nav-color)!important;
-}
-.LeftPaneContainer-navItem {
-background: var(--leftpane-nav-item-color)!important;
-}
-.Node-children{
-border-color: var(--node-children-line);
-}
+  /* Note */
+  .Node-renderedNote {
+    color: var(--blue2);
+    background: var(--background2);
+    font-style: italic;
+    border-radius: 4px;
+    padding: 2px 4px;
+    width: fit-content;
+  } 
 
 
-/* ==== appearance ==== */
-/* 1. Node */
-.node-inline-item {
-  margin-top: 0px;
-}
+  /* Code */
+    /* Inline Code */
+    .node-inline-code {
+      color: var(--red);
+      background-color: var(--background3);
+      font-family: "Azeret Mono", "IBM Plex Sans KR";
+    }
+    /* Multi line code */
+    .hljs {
+      color: var(--text);
+      background: var(--background3);
+      font-family: "Azeret Mono", "IBM Plex Sans KR";
+    }
 
-/*    1.1. note */
-.Node-renderedNote {
-  font-style: italic;
-  border-radius: 4px;
-  padding: 2px 4px;
-  width: fit-content;
-} 
+  /* Link */
+    /* Internal */
+    .node-link-internal.is-displayed {
+      font-family: inherit;
+      border: none;
+      color: var(--orange);
+      font-style: italic;
+      background: inherit;
+    }
+    .node-link-internal.is-displayed:before {
+      content: "";
+      padding-right: 0px;
+    }
+    .node-link-internal.is-displayed:hover {
+      text-decoration: underline;
+    }
+    
 
-/*   1.2. link */
-/*     1.2.1. internal */
-.node-link-internal.is-displayed {
-  border: none;
-  border-radius: 0;
-  border-bottom: 1px solid var(--orange2);
-  color: var(--orange);
-  font-style: italic;
-  background: inherit;
-}
-/*       1.2.1.1. ::before */
-.node-link-internal.is-displayed:before {
-  font-family: inherit;
-  content: "";
-  padding-right: 0px;
-}
-/*        ** hover  */
-.node-link-internal.is-displayed:hover:before {
-  font-family: inherit;
-  content: "[[";
-  padding-right: 0px;
-  color: var(--orange2);
-}
-/*       1.2.1.1. ::after */
-.node-link-internal.is-displayed:after {
-  font-family: inherit;
-  content: "";
-  padding-left: 0px;
-}
-/*        ** hover  */
-.node-link-internal.is-displayed:hover:after {
-  font-family: inherit;
-  content: "]]";
-  padding-left: 0px;
-  padding-right: 2px;
-  color: var(--orange2);
-}
+  /* Document */
+  .main-container {
+    background: var(--background);
+  }
+  .DocumentContainer{
+    background: var(--document-container);
+  }
 
+  /* App Header */
+  .AppHeader {
+    color: var(--text2);
+    background-color: var(--background);
+    box-shadow: none;
+  }
+  .AppHeader-icon {
+    color: var(--text2);
+  }
 
-/* ==== misc ==== */
-/* 1. setting */
-.setting-right {
-display: inline;
-}
-textarea.setting-text-field {
-width: 100%;
-height: 30em;
-}
-/* 2. none shadow */
-.is-desktop .LeftPaneSlidebarContainer {
-box-shadow: none;
-} 
-.AppHeader {
-box-shadow: none;
-}
+  /* Tools */
+  .DocumentTools-overlay {
+    background: var(--background)!important;
+    box-shadow: none;
+  }
+
+  /* Left Pane */
+  .LeftPaneContainer {
+    background-color: var(--background);
+  }
+  .LeftPaneContainer-nav {
+    background: var(--background);
+  }
+  .LeftPaneContainer-navItem {
+    background: var(--background);
+  }
+    /* Item */
+    .DocumentItem-title {
+      font-family: "Fira Code", monospace;
+      font-weight: 500;
+    }
+    .DocumentItem.is-open .DocumentItem-title {
+      font-weight: 700;
+    }
+
+    /* Slider */
+    .is-desktop .LeftPaneSlidebarContainer {
+      box-shadow: none;
+    } 
+
+  /* ********************************************
+  * MISC
+  ******************************************** */
+
+  /* Setting */
+  .setting-right {
+    display: inline;
+  }
+  textarea.setting-text-field {
+    width: 100%;
+    height: 30em;
+  }

@@ -83,6 +83,8 @@
     width: fit-content;
   } 
 
+  /* Heading */
+  
 
   /* Code */
     /* Inline Code */
@@ -173,6 +175,28 @@
       font-weight: 700;
     }
 
+    .DocumentItem-header.pane-item-header {
+      padding-left: 8px;
+    }
+    .DocumentItem-icon.pane-item-icon {
+      padding: 0;
+    }
+    .DocumentItem-icon.pane-item-icon::before {
+      content: "";
+    }
+    .FolderItem-title {
+      font-family: "Fira Code", monospace;
+      font-weight: 500;
+    }
+    .FolderItem-icon.pane-item-icon {
+      padding: 0;
+    }
+    .FolderItem-icon.pane-item-icon::before {
+      content: "";
+    }
+    .pane-item-toggler:before {
+      color: black;
+    }
     /* Slider */
     .is-desktop .LeftPaneSlidebarContainer {
       box-shadow: none;

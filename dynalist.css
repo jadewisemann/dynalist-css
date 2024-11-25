@@ -4,7 +4,7 @@
   ******************************************** */
 
   /* Azeret Mono */
-  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap'); */
 
   /* Nanum Gothic Coding */
   @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
@@ -16,8 +16,10 @@
   @import url(https://cdn.jsdelivr.net/gh/eunchurn/NanumSquareNeo@0.0.6/nanumsquareneo.css);
 
   /* Fira Code (300 ~ 700)*/
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+  /* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
 
+  /* "JetBrains Mono", monospace (100 ~ 800) */
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
   /* ********************************************
   * THEME
@@ -91,13 +93,14 @@
     .node-inline-code {
       color: var(--red);
       background-color: var(--background3);
-      font-family: "Azeret Mono", "IBM Plex Sans KR";
+      font-family: "JetBrains Mono", "IBM Plex Sans KR";
+      overflow: hidden;
     }
     /* Multi line code */
     .hljs {
       color: var(--text);
       background: var(--background3);
-      font-family: "Azeret Mono", "IBM Plex Sans KR";
+      font-family: "JetBrains Mono", "IBM Plex Sans KR";
     }
 
   /* Link */
@@ -168,7 +171,7 @@
   }
     /* Item */
     .DocumentItem-title {
-      font-family: "Fira Code", monospace;
+      font-family: "JetBrains Mono", monospace;
       font-weight: 500;
     }
     .DocumentItem.is-open .DocumentItem-title {
@@ -185,7 +188,7 @@
       content: "";
     }
     .FolderItem-title {
-      font-family: "Fira Code", monospace;
+      font-family: "JetBrains Mono", monospace;
       font-weight: 500;
     }
     .FolderItem-icon.pane-item-icon {
@@ -196,6 +199,12 @@
     }
     .pane-item-toggler:before {
       color: black;
+    }
+    .is-mobile .DocumentItem-header.pane-item-header {
+      padding-left: 20px;
+    }
+    .is-mobile .FolderItem-toggler.pane-item-toggler {
+      padding: 0;
     }
     /* Slider */
     .is-desktop .LeftPaneSlidebarContainer {

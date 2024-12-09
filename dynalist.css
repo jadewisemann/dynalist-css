@@ -21,6 +21,9 @@
   /* "JetBrains Mono", monospace (100 ~ 800) */
   @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 
+  /* Interop */
+  @import url(https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1);
+
   /* ********************************************
   * THEME
   ******************************************** */
@@ -39,6 +42,8 @@
     --orange2: #cd9731;
     --red: #cd3131;
     --purple: #800080;
+    --node-font: "Interop";
+    --monospace-font: "JetBrains Mono", "IBM Plex Sans KR";
   }
 
   /* ********************************************
@@ -62,7 +67,7 @@
   /* Node */
   .Node {
     color: var(--text);
-    font-family: 'NanumSquareNeo';
+    font-family: var(--node-font);
     font-weight: 500;
   }
   .Node-children{
@@ -93,14 +98,14 @@
     .node-inline-code {
       color: var(--red);
       background-color: var(--background3);
-      font-family: "JetBrains Mono", "IBM Plex Sans KR";
+      font-family: var(--monospace-font);
       overflow: hidden;
     }
     /* Multi line code */
     .hljs {
       color: var(--text);
       background: var(--background3);
-      font-family: "JetBrains Mono", "IBM Plex Sans KR";
+      font-family: var(--monospace-font);
     }
 
   /* Link */
@@ -171,7 +176,7 @@
   }
     /* Item */
     .DocumentItem-title {
-      font-family: "JetBrains Mono", monospace;
+      font-family: var(--monospace-font);
       font-weight: 500;
     }
     .DocumentItem.is-open .DocumentItem-title {
@@ -188,7 +193,7 @@
       content: "";
     }
     .FolderItem-title {
-      font-family: "JetBrains Mono", monospace;
+      font-family: var(--monospace-font);
       font-weight: 500;
     }
     .FolderItem-icon.pane-item-icon {

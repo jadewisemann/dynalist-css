@@ -1,251 +1,263 @@
 
-  /* ********************************************
-  * IMPORT FONT
-  ******************************************** */
+/* ********************************************
+* IMPORT FONT
+******************************************** */
 
-  /* Azeret Mono */
-  /* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap'); */
+/* Azeret Mono */
+/* @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&display=swap'); */
 
-  /* Nanum Gothic Coding */
-  @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+/* Nanum Gothic Coding */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
 
-  /* IBM Plex Sans KR */
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
+/* IBM Plex Sans KR */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap');
 
-  /* Nanum Square Neo (100, 300, 500, 700, 800)*/
-  @import url(https://cdn.jsdelivr.net/gh/eunchurn/NanumSquareNeo@0.0.6/nanumsquareneo.css);
+/* Nanum Square Neo (100, 300, 500, 700, 800)*/
+@import url(https://cdn.jsdelivr.net/gh/eunchurn/NanumSquareNeo@0.0.6/nanumsquareneo.css);
 
-  /* Fira Code (300 ~ 700)*/
-  /* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
+/* Fira Code (300 ~ 700)*/
+/* @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap'); */
 
-  /* "JetBrains Mono", monospace (100 ~ 800) */
-  /* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
+/* "JetBrains Mono", monospace (100 ~ 800) */
+/* @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap'); */
 
-  /* Interop */
-  @import url(https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1);
+/* Interop */
+@import url(https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1);
 
-  /* Cascadia Mono */
-  /* @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2); */
-  /* @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2); */
+/* Cascadia Mono */
+/* @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2); */
+/* @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2); */
 
-  @font-face {
-    font-family: 'CascadiaCode';
-    src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
 
-  @font-face {
-    font-family: 'CascadiaCode';
-    src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2') format('woff2');
-    font-weight: normal;
-    font-style: italic;
-  }
-    
-  /* ********************************************
-  * THEME
-  ******************************************** */
+@font-face {
+  font-family: 'CascadiaCode';
+  src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: italic;
+}
 
-  :root {
-    --text: #535353;
-    --text2: #ababab;
-    --background: #f8f8f8;
-    --background2: #f3f3f3;
-    --background3: #ececec;
-    --background4: #cacaca;
-    --blue: #316bcd;
-    --blue2: #7A9FDF;
-    --blue3: #BACDEE;
-    --orange: #e88501;
-    --orange2: #cd9731;
-    --red: #cd3131;
-    --purple: #800080;
-    --node_font: "Interop";
-    --node_font-weight: 400;
-    --bold_font-weight: 600;
-    --monospace-font: "CascadiaCode", "IBM Plex Sans KR";
-  }
+html {
+  font-size: 62.5%;
+}
 
-  /* ********************************************
-  * ITEM
-  ******************************************** */
-
-  /* Tags */ 
-  .node-tag {
-    background: rgba(172, 30, 43, 0.6);
-    color: white;
-    font-size: 0.8em;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 0.3em;
-    padding: 2px 5px;
-    &:hover {
-      background: rgba(172, 30, 43, 0.6);
-    }
-  }
-
-  /* Node */
-  .Node {
-    color: var(--text);
-    font-family: var(--node_font);
-    font-weight: var(--node_font-weight);
-  }
-  .Node-children{
-    border-color: var(--text2);
-  }
-  .node-inline-item {
-    margin-top: 0px;
-  }
-  .node-bold {
-    font-weight: var(--bold_font-weight);
-  }
-
-  /* Note */
-  .Node-renderedNote {
-    color: var(--blue2);
-    background: var(--background2);
-    font-style: italic;
-    border-radius: 4px;
-    padding: 2px 4px;
-    width: fit-content;
-  } 
-
-  /* Heading */
+body {
+  font-size: 1rem;
+}
   
+/* ********************************************
+* THEME
+******************************************** */
 
-  /* Code */
-    /* Inline Code */
-    .node-inline-code {
-      color: var(--red);
-      background-color: var(--background3);
-      font-family: var(--monospace-font);
-      overflow: hidden;
-    }
-    /* Multi line code */
-    .hljs {
-      color: var(--text);
-      background: var(--background3);
-      font-family: var(--monospace-font);
-    }
+:root {
+  --text: #535353;
+  --text2: #ababab;
+  --background: #f8f8f8;
+  --background2: #f3f3f3;
+  --background3: #ececec;
+  --background4: #cacaca;
+  --blue: #316bcd;
+  --blue2: #7A9FDF;
+  --blue3: #BACDEE;
+  --orange: #e88501;
+  --orange2: #cd9731;
+  --red: #cd3131;
+  --purple: #800080;
+  --node_font: "Interop";
+  --node_font-weight: 400;
+  --bold_font-weight: 600;
+  --monospace-font: "CascadiaCode", "IBM Plex Sans KR";
 
-  /* Link */
-    /* Internal */
-    .Node-contentContainer .node-inline-item {
-      font-size: 1em;
-    }
+}
 
-    .node-link-internal { 
-      &.is-displayed {
-        font-family: inherit;
-        border: none;
-        color: var(--orange);
-        font-style: italic;
-        background: inherit;
-        margin-top: auto;
-        &:before {
-          content: "";
-          padding-right: 0px;
-        }
-        &:hover {
-          text-decoration: underline;
-          &::after {
-            content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M10 10.0367H8V16.0367H14V14.0367H11.4142L16.7438 8.70712L15.3296 7.2929L10 12.6225V10.0367Z' fill='currentColor'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z' fill='currentColor'/%3E%3C/svg%3E");
-            display: inline-block;
-            width: 14px;
-            height: 14px;
-            margin-bottom: 3px;
-            vertical-align: middle;
-          }
+/* ********************************************
+* ITEM
+******************************************** */
+
+/* Tags */ 
+.node-tag {
+  background: rgba(172, 30, 43, 0.6);
+  color: white;
+  font-size: 0.8em;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.3em;
+  padding: 2px 5px;
+  &:hover {
+    background: rgba(172, 30, 43, 0.6);
+  }
+}
+
+/* Node */
+.Node {
+  color: var(--text);
+  font-family: var(--node_font);
+  font-weight: var(--node_font-weight);
+}
+.is-mediumFont .Node-contentContainer  {
+  font-size: 2rem;
+}
+.Node-children{
+  border-color: var(--text2);
+}
+.node-inline-item {
+  margin-top: 0px;
+}
+.node-bold {
+  font-weight: var(--bold_font-weight);
+}
+
+/* Note */
+.Node-renderedNote {
+  color: var(--blue2);
+  background: var(--background2);
+  font-style: italic;
+  border-radius: 4px;
+  padding: 2px 4px;
+  width: fit-content;
+} 
+
+/* Heading */
+
+
+/* Code */
+  /* Inline Code */
+  .node-inline-code {
+    color: var(--red);
+    background-color: var(--background3);
+    font-family: var(--monospace-font);
+    overflow: hidden;
+  }
+  /* Multi line code */
+  .hljs {
+    color: var(--text);
+    background: var(--background3);
+    font-family: var(--monospace-font);
+  }
+
+/* Link */
+  /* Internal */
+  .Node-contentContainer .node-inline-item {
+    font-size: 1em;
+  }
+
+  .node-link-internal { 
+    &.is-displayed {
+      font-family: inherit;
+      border: none;
+      color: var(--orange);
+      font-style: italic;
+      background: inherit;
+      margin-top: auto;
+      &:before {
+        content: "";
+        padding-right: 0px;
+      }
+      &:hover {
+        text-decoration: underline;
+        &::after {
+          content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M10 10.0367H8V16.0367H14V14.0367H11.4142L16.7438 8.70712L15.3296 7.2929L10 12.6225V10.0367Z' fill='currentColor'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M1 5C1 2.79086 2.79086 1 5 1H19C21.2091 1 23 2.79086 23 5V19C23 21.2091 21.2091 23 19 23H5C2.79086 23 1 21.2091 1 19V5ZM5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3Z' fill='currentColor'/%3E%3C/svg%3E");
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          margin-bottom: 3px;
+          vertical-align: middle;
         }
       }
     }
-
-
-  /* Document */
-  .main-container {
-    background: var(--background);
-  }
-  .DocumentContainer{
-    background: var(--document-container);
   }
 
-  /* App Header */
-  .AppHeader {
-    color: var(--text2);
-    background-color: var(--background);
+
+/* Document */
+.main-container {
+  background: var(--background);
+}
+.DocumentContainer{
+  background: var(--document-container);
+}
+
+/* App Header */
+.AppHeader {
+  color: var(--text2);
+  background-color: var(--background);
+  box-shadow: none;
+}
+.AppHeader-icon {
+  color: var(--text2);
+}
+
+/* Tools */
+.DocumentTools-overlay {
+  background: var(--background)!important;
+  box-shadow: none;
+}
+
+/* Left Pane */
+.LeftPaneContainer {
+  background-color: var(--background);
+}
+.LeftPaneContainer-nav {
+  background: var(--background);
+}
+.LeftPaneContainer-navItem {
+  background: var(--background);
+}
+  /* Item */
+  .DocumentItem-title {
+    font-family: var(--monospace-font);
+    font-weight: 500;
+  }
+  .DocumentItem.is-open .DocumentItem-title {
+    font-weight: 700;
+  }
+
+  .DocumentItem-header.pane-item-header {
+    padding-left: 8px;
+  }
+  .DocumentItem-icon.pane-item-icon {
+    padding: 0;
+  }
+  .DocumentItem-icon.pane-item-icon::before {
+    content: "";
+  }
+  .FolderItem-title {
+    font-family: var(--monospace-font);
+    font-weight: 500;
+  }
+  .FolderItem-icon.pane-item-icon {
+    padding: 0;
+  }
+  .FolderItem-icon.pane-item-icon::before {
+    content: "";
+  }
+  .pane-item-toggler:before {
+    color: black;
+  }
+  .is-mobile .DocumentItem-header.pane-item-header {
+    padding-left: 20px;
+  }
+  .is-mobile .FolderItem-toggler.pane-item-toggler {
+    padding: 0;
+  }
+  /* Slider */
+  .is-desktop .LeftPaneSlidebarContainer {
     box-shadow: none;
-  }
-  .AppHeader-icon {
-    color: var(--text2);
-  }
+  } 
 
-  /* Tools */
-  .DocumentTools-overlay {
-    background: var(--background)!important;
-    box-shadow: none;
-  }
+/* ********************************************
+* MISC
+******************************************** */
 
-  /* Left Pane */
-  .LeftPaneContainer {
-    background-color: var(--background);
-  }
-  .LeftPaneContainer-nav {
-    background: var(--background);
-  }
-  .LeftPaneContainer-navItem {
-    background: var(--background);
-  }
-    /* Item */
-    .DocumentItem-title {
-      font-family: var(--monospace-font);
-      font-weight: 500;
-    }
-    .DocumentItem.is-open .DocumentItem-title {
-      font-weight: 700;
-    }
-
-    .DocumentItem-header.pane-item-header {
-      padding-left: 8px;
-    }
-    .DocumentItem-icon.pane-item-icon {
-      padding: 0;
-    }
-    .DocumentItem-icon.pane-item-icon::before {
-      content: "";
-    }
-    .FolderItem-title {
-      font-family: var(--monospace-font);
-      font-weight: 500;
-    }
-    .FolderItem-icon.pane-item-icon {
-      padding: 0;
-    }
-    .FolderItem-icon.pane-item-icon::before {
-      content: "";
-    }
-    .pane-item-toggler:before {
-      color: black;
-    }
-    .is-mobile .DocumentItem-header.pane-item-header {
-      padding-left: 20px;
-    }
-    .is-mobile .FolderItem-toggler.pane-item-toggler {
-      padding: 0;
-    }
-    /* Slider */
-    .is-desktop .LeftPaneSlidebarContainer {
-      box-shadow: none;
-    } 
-
-  /* ********************************************
-  * MISC
-  ******************************************** */
-
-  /* Setting */
-  .setting-right {
-    display: inline;
-  }
-  textarea.setting-text-field {
-    width: 100%;
-    height: 30em;
-  }
+/* Setting */
+.setting-right {
+  display: inline;
+}
+textarea.setting-text-field {
+  width: 100%;
+  height: 30em;
+}

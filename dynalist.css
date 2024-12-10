@@ -24,6 +24,24 @@
   /* Interop */
   @import url(https://rsms.me/inter/font-files/InterVariable.woff2?v=4.1);
 
+  /* Cascadia Mono */
+  @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2);
+  @import url(https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2);
+
+  @font-face {
+    font-family: 'CascadiaCode';
+    src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCode.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'CascadiaCode';
+    src: url('https://cdn.jsdelivr.net/gh/jadewisemann/cdn-webfont/cascadia-code/CascadiaCodeItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+  }
+    
   /* ********************************************
   * THEME
   ******************************************** */
@@ -42,8 +60,10 @@
     --orange2: #cd9731;
     --red: #cd3131;
     --purple: #800080;
-    --node-font: "Interop";
-    --monospace-font: "JetBrains Mono", "IBM Plex Sans KR";
+    --node_font: "Interop";
+    --node_font-weight: 400;
+    --bold_font-weight: 600;
+    --monospace-font: "CascadiaCode", "IBM Plex Sans KR";
   }
 
   /* ********************************************
@@ -67,8 +87,8 @@
   /* Node */
   .Node {
     color: var(--text);
-    font-family: var(--node-font);
-    font-weight: 500;
+    font-family: var(--node_font);
+    font-weight: var(--node_font-weight);
   }
   .Node-children{
     border-color: var(--text2);
@@ -77,7 +97,7 @@
     margin-top: 0px;
   }
   .node-bold {
-    font-weight: 700;
+    font-weight: var(--bold_font-weight);
   }
 
   /* Note */
